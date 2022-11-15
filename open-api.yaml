@@ -1,0 +1,17 @@
+swagger: '2.0'
+info: 
+  title: test-api-gateway
+  description: testing api gateway
+  version: 1.0.0
+schemes: 
+  - https
+produces:
+  - application/json
+paths:
+  /api:
+    /health:
+      /running:
+        summery: check api
+        operationId: health-running
+        x-google-backend:
+          address: 
